@@ -1,68 +1,67 @@
 <div align='center'>
    <h1>Workers-DAV</h1>
-   <p>使用 Cloudflare Workers 为 Google Drive 提供 WebDAV 支持</p>
+   <p>WebDAV support for Google Drive using Cloudflare Workers</p>
    <p>WebDAV supports for Google Drive using Cloudflare Workers</p>
-   <b>功能开发中</b>
+   <b>Under development</b>
 </div>
 
 ---
 
-## 主要功能
+The main function
 
--  [x] 网盘挂载
--  [x] 文件列表获取
--  [ ] 文件下载
--  [ ] 文件/文件夹移动
--  [x] 文件/文件夹删除
+    Network disk mount
+    File list acquisition
+    Download Document
+    File/folder movement
+    File/folder deletion
 
-## 配置与部署
+## Configuration and deployment
 
-拉取项目
+pull item
 
 ```shell
 git clone --depth=1 https://github.com/SunYufei/workers-dav.git
 ```
 
-安装项目依赖
+Install project dependencies
 
 ```sh
 cd workers-dav
 npm install
 ```
-
-配置项目属性
+Configure project properties
 
 -  [Cloudflare Workers](docs/config/Cloudflare.md)
 -  [Google Drive](docs/config/Google.md)
 
-部署
+deploy
 
 ```shell
 cd workers-dav
 npm run prod
 ```
 
-## 文档
+## Documentation
 
-1. [模块调用关系](docs/README.md)
-2. [Cloudflare Workers 文档](docs/Cloudflare.md)
+1. [Module call relationship](docs/README.md)
+2. [Cloudflare Workers Documentation](docs/Cloudflare.md)
 3. [Google Drive API](docs/Google.md)
-4. [WebDAV 标准](docs/WebDAV.md)
+4. [WebDAV Standard](docs/WebDAV.md)
 
-## 参考内容
+## Reference content
 
--  API 文档
+- API documentation
    -  [CloudFlare Workers KV API](https://developers.cloudflare.com/workers/runtime-apis/kv)
    -  [fetch API](https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch)
    -  [Google Drive API v3](https://developers.google.com/drive)
    -  RFC 4918 (WebDAV revision)
-      -  [原文](http://www.webdav.org/specs/rfc4918.html), [中文文档](https://fullstackplayer.github.io/WebDAV-RFC4918-CN/)
+      -  [original](http://www.webdav.org/specs/rfc4918.html), [Chinese document](https://fullstackplayer.github.io/WebDAV-RFC4918-CN/)
    -  [WebDAV Methods | Microsoft Docs](<https://docs.microsoft.com/en-us/previous-versions/office/developer/exchange-server-2003/aa142917(v=exchg.65)>)
--  开源项目
+- open source project
    -  [npm-WebDAV-Server](https://github.com/OpenMarshal/npm-WebDAV-Server)
 
-<!--2. [OneDrive 开发人员平台](https://docs.microsoft.com/zh-cn/onedrive/developer/?view=odsp-graph-online)-->
+<!--2. [OneDrive developer platform](https://docs.microsoft.com/zh-cn/onedrive/developer/?view=odsp-graph-online)-->
 
-## 许可
+## License
 
 [MIT License](LICENSE)
